@@ -1,0 +1,207 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+}
+@* 
+<style>
+    body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+        background-color: #007bff;
+        color: #fff;
+        border-bottom: none;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .card-body {
+        padding: 30px;
+    }
+
+    .form-floating input {
+        border-radius: 5px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        .btn-primary:focus {
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+        }
+</style>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h1>@ViewData["Title"]</h1>
+                </div>
+                <div class="card-body">
+                    
+                    @if (Model.ModelState.TryGetValue(string.Empty, out var errors) && errors.Errors.Count > 0)
+                    {
+                        <div class="alert alert-danger" role="alert">
+                            @errors.Errors[0].ErrorMessage
+                        </div>
+                    }
+
+                    <form id="account" method="post">
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Email address</label>
+                            <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-describedby="emailHelp" placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPassword" class="form-label">Password</label>
+                            <input asp-for="Input.Password" class="form-control" autocomplete="current-password" placeholder="Password" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input asp-for="Input.RememberMe" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
+                    </form>
+                    <hr>
+                    <p><a href="./ForgotPassword">Forgot your password?</a></p>
+
+                    <p><a href="./ResendEmailConfirmation">Resend email confirmation</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+ *@
+
+
+
+ <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login</title>
+    
+    <link rel="stylesheet" href="~/assets/vendor/bootstrap/css/bootstrap.min.css"> 
+     <link href="~/assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/assets/libs/css/style.css">
+    <link rel="stylesheet" href="~/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            
+            background-image: url('/assets/noon.jpg');
+            /* https: //su24su.com/wp-content/uploads/2023/11/noon-%D9%86%D9%88%D9%86-1536x864.jpg */
+        }
+
+        .logo-img {
+            width: 100%; /* Adjust the width as needed */
+            height: 50px; /* Adjust the height as needed */
+            margin-right: 10px; /* Adjust the margin as needed */
+        }
+    </style>
+</head>
+
+<body>
+    @if (Model.ModelState.TryGetValue(string.Empty, out var errors) && errors.Errors.Count > 0)
+    {
+        <div class="alert alert-danger" role="alert">
+            @errors.Errors[0].ErrorMessage
+        </div>
+        
+    }
+    @if (@ViewData["ErrorMessage"] !=null)
+    {
+        <div class="alert alert-danger" role="alert">@ViewData["ErrorMessage"]</div>
+    }
+
+    @if (@ViewData["deactivated"] != null)
+    {
+        <div class="alert alert-danger" role="alert">@ViewData["deactivated"]</div>
+    }
+
+   
+    <div class="splash-container">
+        <div class="card">
+            <div class="card-header text-center">
+                <a href="../index.html"><img class="logo-img" src="https://seeklogo.com/images/N/no0on-com-logo-96C05327E1-seeklogo.com.png" alt="logo"></a>
+
+                @* <a href="../index.html"><img class="logo-img" src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2017/10/02/1005796-1410384298.jpg?itok=q7JCQgC3" alt="logo"></a> *@
+                <br /><br />
+                <span class="splash-description">Please enter your user information.</span>
+            </div>
+            <div class="card-body">
+                <form id="account" method="post">
+
+              
+
+                    <div class="form-group">
+                        <label for="inputEmail" class="form-label">Email address</label>
+                        <input asp-for="Input.Email" class="form-control form-control-lg" id="username" type="text" placeholder="name@example.com" required >
+                    </div>
+                  
+                    <div class="form-group">
+                        <label for="inputPassword" class="form-label">Password</label>
+                        <input asp-for="Input.Password" class="form-control form-control-lg" id="password" type="password" placeholder="Password" required>
+                    </div>
+
+
+
+                 
+                    <div class="form-group">
+                        <label class="custom-control custom-checkbox">
+                            <input  asp-for="Input.RememberMe" class="custom-control-input" type="checkbox">
+                            <span class="custom-control-label">Remember Me</span>
+                        </label>
+                    </div>
+
+                    
+                    <button id="login-submit" type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+                </form>
+            </div>
+            <div class="card-footer bg-white p-0">
+                
+                <div class="card-footer-item card-footer-item-bordered">
+                    <a href="./ForgotPassword" class="footer-link">Forgot Password</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <script src="~/assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+ 

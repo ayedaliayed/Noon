@@ -1,0 +1,13 @@
+D:\Noon\noonBackend\AliExpress.Models\bin\Debug\net8.0\AliExpress.Models.deps.json
+D:\Noon\noonBackend\AliExpress.Models\bin\Debug\net8.0\AliExpress.Models.dll
+D:\Noon\noonBackend\AliExpress.Models\bin\Debug\net8.0\AliExpress.Models.pdb
+D:\Noon\noonBackend\AliExpress.Models\obj\Debug\net8.0\AliExpress.Models.csproj.AssemblyReference.cache
+D:\Noon\noonBackend\AliExpress.Models\obj\Debug\net8.0\AliExpress.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Noon\noonBackend\AliExpress.Models\obj\Debug\net8.0\AliExpress.Models.AssemblyInfoInputs.cache
+D:\Noon\noonBackend\AliExpress.Models\obj\Debug\net8.0\AliExpress.Models.AssemblyInfo.cs
+D:\Noon\noonBackend\AliExpress.Models\obj\Debug\net8.0\AliExpress.Models.csproj.CoreCompileInputs.cache
+D:\Noon\noonBackend\AliExpress.Models\obj\Debug\net8.0\AliExpress.Models.sourcelink.json
+D:\Noon\noonBackend\AliExpress.Models\obj\Debug\net8.0\AliExpress.Models.dll
+D:\Noon\noonBackend\AliExpress.Models\obj\Debug\net8.0\refint\AliExpress.Models.dll
+D:\Noon\noonBackend\AliExpress.Models\obj\Debug\net8.0\AliExpress.Models.pdb
+D:\Noon\noonBackend\AliExpress.Models\obj\Debug\net8.0\ref\AliExpress.Models.dll

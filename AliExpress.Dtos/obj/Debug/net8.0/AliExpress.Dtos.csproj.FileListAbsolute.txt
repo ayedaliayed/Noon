@@ -1,0 +1,16 @@
+D:\Noon\noonBackend\AliExpress.Dtos\bin\Debug\net8.0\AliExpress.Dtos.deps.json
+D:\Noon\noonBackend\AliExpress.Dtos\bin\Debug\net8.0\AliExpress.Dtos.dll
+D:\Noon\noonBackend\AliExpress.Dtos\bin\Debug\net8.0\AliExpress.Dtos.pdb
+D:\Noon\noonBackend\AliExpress.Dtos\bin\Debug\net8.0\AliExpress.Models.dll
+D:\Noon\noonBackend\AliExpress.Dtos\bin\Debug\net8.0\AliExpress.Models.pdb
+D:\Noon\noonBackend\AliExpress.Dtos\obj\Debug\net8.0\AliExpress.Dtos.csproj.AssemblyReference.cache
+D:\Noon\noonBackend\AliExpress.Dtos\obj\Debug\net8.0\AliExpress.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+D:\Noon\noonBackend\AliExpress.Dtos\obj\Debug\net8.0\AliExpress.Dtos.AssemblyInfoInputs.cache
+D:\Noon\noonBackend\AliExpress.Dtos\obj\Debug\net8.0\AliExpress.Dtos.AssemblyInfo.cs
+D:\Noon\noonBackend\AliExpress.Dtos\obj\Debug\net8.0\AliExpress.Dtos.csproj.CoreCompileInputs.cache
+D:\Noon\noonBackend\AliExpress.Dtos\obj\Debug\net8.0\AliExpress.Dtos.sourcelink.json
+D:\Noon\noonBackend\AliExpress.Dtos\obj\Debug\net8.0\AliExpress.Dtos.csproj.CopyComplete
+D:\Noon\noonBackend\AliExpress.Dtos\obj\Debug\net8.0\AliExpress.Dtos.dll
+D:\Noon\noonBackend\AliExpress.Dtos\obj\Debug\net8.0\refint\AliExpress.Dtos.dll
+D:\Noon\noonBackend\AliExpress.Dtos\obj\Debug\net8.0\AliExpress.Dtos.pdb
+D:\Noon\noonBackend\AliExpress.Dtos\obj\Debug\net8.0\ref\AliExpress.Dtos.dll
